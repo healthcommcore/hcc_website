@@ -1,0 +1,26 @@
+<?xml version="1.5" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="content">
+	<name>DirectPHP</name>
+	<author>kksou</author>
+	<creationDate>March 2008</creationDate>
+	<copyright>(C) kksou.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@kksou.com</authorEmail>
+	<authorUrl>www.kksou.com/php-gtk2/</authorUrl>
+	<version>1.56</version>
+	<description>This plugin allows direct embedding of PHP commands right inside Joomla content page for dynamic contents. To see examples of using this plugin, please refer to: http://www.kksou.com/php-gtk2/Joomla/DirectPHP-plugin.php</description>
+	<files>
+		<filename plugin="DirectPHP">DirectPHP.php</filename>
+	</files>
+	<params>
+		<param name="using_no_editor" type="radio" default="0" label="Using No Editor" description="Select Yes if you are not using any editor">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="enable_command_block" type="radio" default="1" label="Enable PHP Command Block" description="Enable blocking of the PHP commands below:">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="block_list" type="textarea" cols="20" rows="10" default="basename, chgrp, chmod, chown, clearstatcache, copy, delete, dirname, disk_free_space, disk_total_space, diskfreespace, fclose, feof, fflush, fgetc, fgetcsv, fgets, fgetss, file_exists, file_get_contents, file_put_contents, file, fileatime, filectime, filegroup, fileinode, filemtime, fileowner, fileperms, filesize, filetype, flock, fnmatch, fopen, fpassthru, fputcsv, fputs, fread, fscanf, fseek, fstat, ftell, ftruncate, fwrite, glob, lchgrp, lchown, link, linkinfo, lstat, move_uploaded_file, opendir, parse_ini_file, pathinfo, pclose, popen, readfile, readdir, readllink, realpath, rename, rewind, rmdir, set_file_buffer, stat, symlink, tempnam, tmpfile, touch, umask, unlink, fsockopen, system, exec, passthru, escapeshellcmd, pcntl_exec, proc_open, proc_close, mkdir, rmdir" label="PHP commands to block" description="Direct PHP commands to block from within content page"/>
+	</params>
+</install>

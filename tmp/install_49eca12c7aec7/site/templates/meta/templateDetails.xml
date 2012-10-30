@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="rsgTemplate">
+	<name>Meta Template - Not for use.</name>
+	<creationDate>2007</creationDate>
+	<author>rsgallery2.net</author>
+	<copyright>Open Source, GPL</copyright>
+	<authorEmail>info@rsgallery2.net</authorEmail>
+	<authorUrl>rsgallery2.net</authorUrl>
+	<version>1.0</version>
+	<description>Meta template for all child templates.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>display.class.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+</mosinstall>

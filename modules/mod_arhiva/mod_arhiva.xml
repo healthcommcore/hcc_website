@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Arhiva</name>
+	<author>Branislav Maksin</author>
+	<creationDate>Februar 2009</creationDate>
+	<copyright>(C) 2009 Maksin.ms</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@maksin.ms</authorEmail>
+	<authorUrl>www.maksin.ms</authorUrl>
+	<version>2.0.4</version>
+	<description>OPIS</description>
+	<files>
+		<filename module="mod_arhiva">mod_arhiva.php</filename>
+		<filename>index.html</filename>
+		<filename>slike/index.html</filename>
+		<filename>slike/arhiva.png</filename>
+		<filename>slike/logo.png</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_arhiva.ini</language>
+		<language tag="sr-RS">language/sr-RS/sr-RS.mod_arhiva.ini</language>
+		<language tag="sr-YU">language/sr-YU/sr-YU.mod_arhiva.ini</language>
+	</languages>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="SUFIKS" description="SUFIKS_OPIS" />
+		<param name="link" type="radio" default="1" label="LINK" description="LINK_OPIS">
+			<option value="1">PLISTA</option>
+			<option value="0">STRANA</option>
+		</param>
+		<param name="naziv" type="text" default="" label="NAZIV" description="NAZIV_OPIS" />
+		<param name="pslika" type="radio" default="1" label="PSLIKA" description="PSLIKA_OPIS">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="vpl" type="text" default="8" label="VPL" description="VPL_OPIS" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="sadrzaj" type="list" default="0" label="SADRZAJ" description="SADRZAJ_OPIS">
+			<option value="0">MESECI</option>
+			<option value="1">CLANCI</option>
+		</param>
+		<param name="katid" type="text" default="" label="KATEGORIJA" description="KATEGORIJA_OPIS" />
+		<param name="sekid" type="text" default="" label="SEKCIJA" description="SEKCIJA_OPIS" />		
+		<param name="broj" type="text" default="10" label="BROJ" description="BROJ_OPIS" />
+		<param name="prikaz" type="radio" default="0" label="PRIKAZ" description="PRIKAZ_OPIS">
+			<option value="1">PRIKAZI</option>
+			<option value="0">SAKRI</option>
+		</param>
+	</params>
+	<params group="advanced">
+	  	<param name="js" type="list" default="1" label="JAVASCRIPT" description="JAVASCRIPT_OPIS">
+			<option value="1">SLIDE</option>
+			<option value="2">PUSH</option>
+			<option value="0">BEZ</option>
+		</param>
+		<param name="sef" type="radio" default="1" label="SEF" description="SEF_OPIS">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="sirina" type="text" default="160" label="SIRINA" description="SIRINA_OPIS" />
+		<param name="pozadina" type="text" default="FFF" label="POZADINA" description="POZADINA_OPIS" />
+		<param name="ivica" type="text" default="eeeeee" label="IVICA" description="IVICA_OPIS" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="list" default="1" label="KES" description="KES_OPIS">
+			<option value="1">PREMA</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="autor" type="radio" default="1" label="AUTOR" description="AUTOR_OPIS">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+	</params>
+</install>

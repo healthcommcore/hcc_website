@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Very Simple Image Gallery Plugin</name>
+	<author>Fotis Evangelou - George Chouliaras (JoomlaWorks), mod. Andreas Berger</author>
+	<creationDate>2009-04-05</creationDate>	
+	<copyright>Copyright (c) 2008 JoomlaWorks.gr - http://www.joomlaworks.gr
+	Modifications Copyright (c) 2009 Andreas Berger - http://www.bretteleben.de</copyright>
+	<license>This extension is released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>andreas_berger@bretteleben.de</authorEmail>
+	<authorUrl>http://www.bretteleben.de</authorUrl>
+	<version>1.2.2</version>
+	<description>Image Gallery, large Picture with Thumbnails. Include with {vsig}foldername{/vsig}</description>
+	<params>
+		<param name="th_width" type="text" default="120" size="5" label="Thumbnail width" description="Adjust the maximum thumbnail width in pixels." />
+		<param name="th_height" type="text" default="90" size="5" label="Thumbnail height" description="Adjust the maximum thumbnail height in pixels." />
+		<param name="th_quality" type="text" default="80" size="5" label="Image thumbnail quality" description="Adjust the quality of the generated image thumbnail. Values range from 0 to 100, with 100 giving the best possible result. Values between 60 to 70 should be OK, too! Remember: the lower this value is, the lower the size of the generated thumbnail will be." />
+		<param name="th_space" type="text" default="5" size="5" label="Space between thumbs." description="The free horizonal and vertical space between your thumbnails in pixel."/>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="im_width" type="text" default="90" size="5" label="Gallery width" description="Adjust the width of your gallery." />
+		<param name="im_percent" type="radio" default="1" label="The gallery width is set in Percent/Pixel" description="Set to percent, the gallery width above is interpreted as percentage of the available width, set to pixel it is interpreted as fixed width in pixel.">
+			<option value="1">Percent</option>
+			<option value="0">Pixel</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="im_align" type="radio" default="1" label="Align the gallery left/center/right" description="This setting tells the plugin how to align the gallery in relation to the available space.">
+			<option value="2">left</option>
+			<option value="1">center</option>
+			<option value="0">right</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="th_right" type="radio" default="0" label="Thumbs below or right of main image?" description="Choose where to display the thumbnails in relation to the main image.">
+			<option value="0">Below</option>
+			<option value="2">Below justified</option>
+			<option value="1">Right</option>
+		</param>
+		<param name="th_area" type="text" default="30" size="5" label="Place for thumbnails in percent of gallery width." description="Having set the gallery width to 500px, a value of 40 will use 200px for the thumbnails. This setting is of relevance only if thumbnails are set to be displayed right of the main image."/>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="usescript" type="radio" default="1" label="Use JavaScript?" description="If set to yes, a click on a thumbnail changes the large picture on the same page. If set to no, the click reloads the page to change the large picture.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="setid" type="radio" default="0" label="Foldername as ID?" description="If set to yes, the name of the given folder is also set as identity of the toplevel DIV, allowing the use of custom styles for each gallery.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cap_show" type="radio" default="0" label="Show captions?" description="If set to yes, found captions are shown, if set to no, they get hidden.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="cap_pos" type="radio" default="1" label="Position of captions?" description="Choose where to show the captions, inside the main image or below.">
+			<option value="1">Inside</option>
+			<option value="0">Below</option>
+		</param>
+		<param name="link_use" type="radio" default="0" label="Use links?" description="Choose whether to use found links.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+	<files>
+		<filename plugin="vsig">vsig.php</filename>
+		<filename plugin="vsig">plugin_vsig/shadow.gif</filename>
+		<filename plugin="vsig">plugin_vsig/shadowAlpha.png</filename>
+		<filename plugin="vsig">plugin_vsig/vsig.css</filename>
+		<filename plugin="vsig">plugin_vsig/vsig.js</filename>
+	</files>
+</install>

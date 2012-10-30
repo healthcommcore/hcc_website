@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="rsgTemplate">
+	<name>Semantic - Default display template</name>
+	<creationDate>15/02/07</creationDate>
+	<author>rsgallery2.net</author>
+	<copyright>Open Source, GPL</copyright>
+	<authorEmail>info@rsgallery2.net</authorEmail>
+	<authorUrl>rsgallery2.net</authorUrl>
+	<version>2.0</version>
+	<description>This is the default semantic HTML template.  Currently unfinished.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>display.class.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<css>
+		<filename>css/template.css</filename>
+	</css>
+  <params>
+    <param name="testParameter" type="list" default="white" label="Color Variation" description="Color variation to use">
+      <option value="blue">Blue</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="orange">Orange</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+    </param>
+  </params>
+  </mosinstall>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>RSGallery2 Help</title>
+<style>
+div.helpform {
+    font-family: arial, verdana;
+	font-size:12px;
+    background-color: #F7F8F9;
+    border: solid 1px #d5d5d5;
+    width: 98%;
+    padding: 5px;
+    margin: 5px;
+    border-collapse: collapse;
+    }
+a:link, a:visited{
+	color:#666666;
+	text-decoration:underline;
+	}
+a:hover{
+	color:#666666;
+	text-decoration:none;
+	}
+</style>
+</head>
+
+<body>
+<div class="helpform">
+<img src="../images/rsg2-logo.png" alt="" width="220" height="58" border="0">
+<h1>RSGallery2 Help</h1>
+<p>Basics:<br>
+          <a href="#CP">How do I get to the RSgallery2 control panel?</a><br>  
+          <a href="#config">How do I set my configuration?</a><br>  
+          <a href="#what_batch">What does Batch upload mean?</a><br>  
+          <a href="#how_gallery">How do I create a gallery?</a><br>  
+          <a href="#upload_single">How do I upload single images?</a><br>  
+          <a href="#upload_batch">How do I batch upload images?</a><br>
+		  <a href="#missing">There are images missing, what can I do?</a><br>
+		  <a href="#slideshow">The slideshow isn't working, what can I do?</a><br>
+          <a href="#filesize">Why is my zipfile filesize limited?</a><br>  
+      	  <a href="#edit_images">How do I delete/ edit/ move images?</a><br>
+		  <a href="#info">Where can I find more information?</a><br>
+</p>
+<p><strong><a name="CP"></a>How do I get to the RSgallery2 control panel?</strong><br>
+  Go to the backend of your Joomla! installation and select Components -&gt; RSgallery2.
+<p><strong><a name="config"></a>How do I set my configuration?</strong><br>
+  Go to your RSgallery2 control panel. Then click on the Configuration tab.</p>
+<p><strong><a name="what_batch"></a>What does Batch upload mean?</strong><br>
+  There are several ways to do that, devided into single upload and batch upload. Batch upload means uploaden multiple images at once. This can be done using FTP (File Transpher Protocol) or with a zipfile.</p>
+<p><a name="how_gallery"></a><strong>How do I create a gallery?</strong><br>
+  Go to the RSgallery2 control panel. <br>
+  Click Manage Galleries.<br>
+  Click New in the toolbar.<br>
+  Enter a name for the Gallery (this is displayed on the website).<br>
+  Enter a discription (optional).<br>
+  Select a parent item. This way you can embed gallery in gallery with infinitive depth. If you just want to make it a main gallery select Top, if you want it to be a subgallery, select the gallery you want to make it a subgallery from.<br>
+  After you have uploaded images into the gallery, you will be able to set one specific thumbnail as the thumbnail of that gallery. If you don't choose any, the thumbnail will be chosen radomly.<br>
+  Ordering can be changed after this item is saved.<br>
+  Is you set Publish to No, the gallery will not be displayed on the frontpage including images and subgalleries in the gallery.</p>
+<p><strong><a name="upload_single"></a>How do I upload single images?</strong><br>
+  First, make sure you have created a gallery.<br>
+  Go to the RSgallery2 control panel. Click on upload.<br>
+  Pick a gallery. Choose the gallery in which you want the images to appear. Select it in the dropdown menu and click next.<br>
+  Choose the number of images you want to upload (maximum is 25, for more use batch upload instead). After you have done that, click next (you will be taken there directly if you choose anything else then 1).<br>
+  Browse to the images you want to upload. You can give each image you upload a title and a description.<br>
+  Click upload.<br>
+  After this you will be taken to the images overview.</p>
+<p><strong><a name="upload_batch"></a>How do I batch upload images?</strong><br>
+  Go to the RSgallery2 control panel.<br>
+  Click Batch Upload.<br>
+  Now you have two options: FTP upload and Zipfile upload.</p>
+<p><em>Zip-file:</em> Look at the red message below the browse field. It says something about the upload limit. Make sure that when you pack your files in a zipfile, the file does not exceed the size displayed here.<br>
+  Create the zipfile, make sure the filenames don't have spaces in them. Unix and Linux systems have a problem with that sometimes.<br>
+  Go back to the RSgallery2 Control panel and browse to your zipfile, click on it and click on Ok. After that, select in which Gallery you want the picture to end up in the drop down menu next to Specify Gallery, or select 'No, specify gallery per image in step 2'. Either way, press Next in the toolbar. RSgallery2 will start to upload the zipfile and unpack it. This can take a while.</p>
+<p>Now we are at step 2 of the Batch upload process. RSGallery2 has uploaded the zipfile, unpacked it and is now displaying the images. You can delete images from, if you decide you don't want to upload that certain image, change titles (if you do not enter any, the name of the file will be used as the title, minus the extension) and in which category the images have to go (if you selected this in the previous step).<br>
+  Once you have done all that, hit Next in the toolbar. Click ok when prompted.</p>
+<p><em>FTP:</em> Upload the files to a certain ftp location on your server. Go back to the RSgallery2 control panel and select the radiobutton next to 'FTP-path'. Enter the FTP-path in the field next to this, don't forget starting and trailing slash. After that, select in which Gallery you want the picture to end up in the drop down menu next to Specify Gallery, or select 'No, specify gallery per image in step 2'. Either way, press Next in the toolbar. RSgallery2 will start to upload the images. This can take a while.</p>
+<p>Now we are at step 2 of the Batch upload process. RSGallery2 is now displaying the images. You can delete images from, if you decide you don't want to upload that certain image, change titles (if you do not enter any, the name of the file will be used as the title, minus the extension) and in which category the images have to go (if you selected this in the previous step).<br>
+  Once you have done all that, hit Next in the toolbar. Click ok when prompted.</p>
+<p><a name="missing"></a><strong>There are images missing, what can I do?<br>
+</strong>Somtimes, during upload, images don't get uploaded or created correctly. This has most of the times to do with the server configuration. You can handle this with the Consolidate database function in the RSgallery2 Control Panel. Click it and click continue. Now you the script will check which files are in the folders, and which ones are in the database and compare these. The result will be displayed. When images were not created you can create them by clicking &quot;Create missing images&quot;. Deleting and ajustment of the database is not yet implemented.</p>
+<p><a name="slideshow"></a><strong>The slideshow isn't working, what can I do?<br>
+</strong>This is probably a result from missing images. You can handle this as stated in </a><a href="#missing">There are images missing, what can I do?.</p>
+<p><strong><a name="filesize"></a>Why is my zipfile filesize limited?</strong><br>
+  This is done by the host of the webserver in the php.ini file. If you are on a shared host, and you can't get to the php.ini file you can choose to enter the following into you .htaccess file in the root of you Joomla! install in order to bypass this restriction.<br>
+  &lt;IfModule mod_php4.c&gt; <br>
+  php_value upload_max_filesize 10M<br>
+  &lt;/IfModule&gt;<br>
+  If the server has the module mod_php4.c installed, the maximum upload value will now be 10MB.</p>
+<p><strong><a name="edit_images"></a>How do I delete/ edit/ move images?</strong><br>
+  Go to the RSgallery2 control panel.<br>
+  Go to Manage images.<br>
+  If you have a lot of images it is wise to select which category you want the images to be displayed of. To do that, click on the drop down menu View Category and select the category. If there are still to many images you may wish to search for the image using the field next to the View Category drop down menu.</p>
+<p><em>Deleting images:</em> Select the images by marking the box infront of it and click Delete in the Toolbar. Click Ok or cancel when asked to.</p>
+<p><em>Editing images:</em> Select the images by marking the box infront of it and click Edit in the Toolbar, or click on the name of the image. Here you can change the name and discription of the image.</p>
+<p><em>Moving images:</em> Select the image by marking the box infront of it and select the Category you want to move the image to in the dropdown menu next to the button Move To, that says Select Category. Now click the button Move To. Hit Ok or cancel when asked to.</p>
+<p><strong><a name="info" id="info"></a>Where can I find more information? </strong><br>
+  More information can be found on: <a href="http://rsgallery2.net" target="_blank">http://rsgallery2.net</a></p>
+Good luck and stay tuned for an exciting RSGallery2.
+
+<br>
+<br>The Development Team
+</p>
+</div>
+<div class="helpform" style=text-align:center;>
+    <FORM>
+        <INPUT TYPE="button" VALUE="Close Window" onClick="window.close()">
+    </FORM>
+</div>
+
+</body>
+</html>
