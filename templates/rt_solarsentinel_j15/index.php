@@ -99,7 +99,8 @@ pageTracker._trackPageview();
 
 	<body id="ff-<?php echo $fontfamily; ?>" class="<?php echo $fontstyle; ?> <?php echo $tstyle; ?> <?php echo $bg_style; ?> iehandle">
 		<div id="page-bg">
-			<div class="wrapper"><div id="body-left" class="png"><div id="body-right" class="png">
+			<div class="wrapper">
+				<div id="content_border">
 				<!--Begin Top Bar-->
 				<?php if ($show_date == "true" or $show_textsizer == "true" or $this->countModules('top-left') or $this->countModules('top-right') or $this->countModules('syndicate')): ?>
 				<div id="top-bar">
@@ -421,7 +422,8 @@ pageTracker._trackPageview();
 					<?php endif; ?>
 					<!--End Bottom Section-->
 				</div>
-			</div></div></div>
+			</div>
+		</div>
 		</div>
 		<div class="footer-bottom"></div>
 		<?php if ($this->countModules('debug')) : ?>
