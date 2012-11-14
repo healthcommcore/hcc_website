@@ -29,13 +29,13 @@ p {margin:0 0 20px 0;}
 h3, #hcc_form label, strong, span.emphasis{font-family: 'RobotoBold'; font-weight:normal;}
 h1, h5 {padding-bottom: 5px;margin: 25px 0 10px 0;font-weight: normal;line-height: 120%;}
 h1 {font-size: 170%;line-height: 100%;}
-h2 {font-size: 137%;line-height: 140%; font-weight: normal; color:#e4660d; margin:10px 0 3px 0; font-family: 'RobotoLight';}
+h2 {font-size: 123%;line-height: 140%; font-weight: normal; color:#7C7F43; margin:10px 0 3px 0; font-family: 'FrancoisOneRegular'; text-transform:uppercase;}
 h3.module-title{font-family:'SansumiExtraBoldRegular'} 
 h3, #hcc_form label {font-size: 120%; margin: 12px 0 3px 0;}
-h2.contentheading, .feature-block .feature-title, #horiz-menu{font-family: 'FrancoisOneRegular'; font-weight:normal;} 
+h2.contentheading, .feature-block .feature-title, #horiz-menu{font-family: 'FrancoisOneRegular'; font-weight:normal; text-transform:inherit;} 
 /*h4 {font-size: 110%;line-height: 130%;}*/
 h5 {font-size: 100%;text-transform: uppercase;}
-span.emphasis, h3{color:#4A4D1A; font-size:1.15em;}
+span.emphasis, h3{color:#01529C; font-size:1.15em;}
 a {text-decoration: none;}
 a:hover {text-decoration: underline;}
 .clr {clear: both;}
@@ -284,7 +284,7 @@ span.breadcrumbs img {width: 12px;height: 26px;float: left;}
 span.breadcrumbs a, span.no-link {padding: 0 6px;float: left;display: block;height: 26px;line-height: 26px;}
 span.breadcrumbs span.no-link {font-weight: normal;}
 span.breadcrumbs a:hover {text-decoration: none;}
-.contentheading {font-size: 210%; line-height: 80%;margin: 0 -15px 14px -15px; margin: 20px 0 30px 0; padding: 20px 15px 0 0; height: 25px; border-bottom: #9ad0fc 1px solid;}
+.contentheading {font-size: 210%; line-height: 80%;margin: 0 -15px 14px -15px; margin: 20px 0 30px 0; padding: 20px 15px 0 0; height: 25px;}
 p.buttonheading {float: right;margin: 0 0 0 15px;}
 /*.article-info-surround {padding: 0 0 9px 0;margin: 0 0 10px 0;}
 .article-info-surround2 {padding: 10px 14px;}*/
@@ -303,7 +303,7 @@ div.pagination div.page-block {padding: 0 4px;float: left;margin-right: 6px;}
 .column2 {float: right;margin: 0;width: 49%;}
 .article_row {margin: 0 -15px;padding: 0 15px;overflow: hidden;}
 .blog_more {padding-top: 15px;}
-#page {padding-bottom: 15px;}
+#page {padding-bottom: 65px;}
 .component-header {margin: 0;}
 .componentheading {margin: 0 -15px;font-size: 110%;line-height: 28px;text-transform: uppercase;padding: 0 0 0 15px;height: 43px;font-weight: bold;}
 
@@ -509,6 +509,12 @@ form.josForm label.hasTip {display: block;float: left;height: 25px;line-height: 
 .clear {clear: both;}
 
 /* RokMicroNews */
+#rokmicronews{padding-left:15px;}
+#rokmicronews .footermod{margin-top:8px;}
+#rokmicronews .footermod p{margin-right:55px; float:left;}
+#rokmicronews .footermod p.menu{color:#C46C3F;}
+#rokmicronews .footermod p.menu a{margin-right:3px;}
+#rokmicronews .footermod p img{margin-top:3px;}
 #main-body .rokmicronews-surround {margin-bottom: 5px;padding-bottom: 5px;}
 .micronews {margin-bottom: 0;}
 .micronews-drop {margin-bottom: 10px;}
@@ -687,7 +693,7 @@ pre {overflow: auto;}
 .home a{font-size:12px;}
 .home img{border:#AADB9F 1px solid;}
 
-h3, #hcc_form label{color:#719843;}
+h3, #hcc_form label{color:#7C7F43;}
 h4{font-size:12px; color:#4C90BD; font-weight:bold; margin:0; padding:0; line-height:140%; margin:0 0 4px 0;}
 
 #home-border-right{border-right:#32538A 1px solid;}
@@ -720,7 +726,7 @@ div.quote div.module p.source{font-size:.75em; font-family:inherit;}
 #hcc_form .invisible{position:absolute; margin-left:3000px;}
 #hcc_form{margin-bottom:20px;}
 #hcc_form input{height:25px; margin-bottom:15px;}
-#hcc_form input, #hcc_form textarea{width:80%; border:#AADB9F 1px solid;}
+#hcc_form input, #hcc_form textarea{width:80%; border:#7C7F43 1px solid;}
 
 
 

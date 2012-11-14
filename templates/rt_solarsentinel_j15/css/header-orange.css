@@ -22,7 +22,7 @@
 .menutop .submenu-animation-right {background: url(../images/header/orange/sub-bg-active-l.png) 0 0 no-repeat;}
 .menutop .submenu-animation-left {background: url(../images/header/orange/sub-bg-active-r.png) 100% 0 no-repeat;}
 #horiz-menu.suckerfish li li span, #horiz-menu.suckerfish li li:hover, #horiz-menu.suckerfish li li.sfHover {color: #B05307;/*background: url(../images/header/orange/sub-bg-active-r.png) 100% 0 repeat-x;*/}
-#horiz-menu.suckerfish li li:hover span, #horiz-menu.suckerfish li li:hover li:hover span, #horiz-menu.suckerfish li li:hover li:hover li:hover span, #horiz-menu.suckerfish li li:hover li:hover li:hover li:hover span, #horiz-menu.suckerfish li li.sfHover span, #horiz-menu.suckerfish li li.sfHover li.sfHover span, #horiz-menu.suckerfish li li.sfHover li.sfHover li.sfHover span, #horiz-menu.suckerfish li li.sfHover li.sfHover li.sfHover li.sfHover span {color: #B4470F;/*background: url(../images/header/orange/sub-bg-active-l.png) 0 0 no-repeat;*/}
+#horiz-menu.suckerfish li li:hover span, #horiz-menu.suckerfish li li:hover li:hover span, #horiz-menu.suckerfish li li:hover li:hover li:hover span, #horiz-menu.suckerfish li li:hover li:hover li:hover li:hover span, #horiz-menu.suckerfish li li.sfHover span, #horiz-menu.suckerfish li li.sfHover li.sfHover span, #horiz-menu.suckerfish li li.sfHover li.sfHover li.sfHover span, #horiz-menu.suckerfish li li.sfHover li.sfHover li.sfHover li.sfHover span {color: #222;/*background: url(../images/header/orange/sub-bg-active-l.png) 0 0 no-repeat;*/}
 
 #searchmod .search_options {color: #fff;}
 #roksearch_results .rokajaxsearch-overlay {background: #F46900;}

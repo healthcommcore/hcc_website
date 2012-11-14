@@ -37,7 +37,7 @@ form.form-login .login-links a {background: url(../images/modules/light-arrow.pn
 .tabs-bottom .arrow-prev {background: url(../images/body/white/roktabs-prev-bottom.png) 0 0 no-repeat;left: 0;}
 .tabs-hidden .roktabs {background: #c2c2c2;}
 
-.rokmicronews-surround {background: #c2c2c2 url(../images/body/white/roktabs-bg.png) 0 0 repeat-x;}
+.rokmicronews-surround {border-top:#D7E4EF 6px solid;}
 .micronews-right .micronews-wrapper {background: #eee url(../images/body/white/rokmicro-list-bg.png) 100% 0 repeat-y;}
 .micronews-left .micronews-wrapper {background: #eee url(../images/body/white/rokmicro-list-bg.png) 0 0 repeat-y;}
 .micronews-controls {background: url(../images/body/white/rmn-inset-r.png) 100% 0 no-repeat;}
