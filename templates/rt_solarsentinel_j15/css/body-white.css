@@ -5,12 +5,13 @@
 
 .s-c-s .colright, .x-c-s .colmask, /*#inset-block-right*/ {background-image: url(../images/body/white/col-r.png);}
 /*.s-c-s .colmask, .s-c-x .colmask, #inset-block-left {background-image: url(../images/body/white/col-l.png);}*/
+.leftmenu {background:#d7f0d1;}
 #body-left {background: url(../images/body-l.png) 0 0 repeat-y;}
 #body-right {background: url(../images/body-r.png) 100% 0 repeat-y;}
 
-/*.module-header {background: #D7F0D1 url(../images/modules/mod_header_right.png) 0 0 repeat-x;}
+.module-header {background: #D7F0D1 url(../images/modules/mod_header_right.png) 0 0 repeat-x;}
 #leftcol .module-header2, #inset-block-left .module-header2 {background: #aadb9f url(../images/modules/mod_header_right.png) 100% 0 repeat-x;}
-#leftcol .side-mod h3, #inset-block-left .side-mod h3 {background: url(../images/modules/mod_header_left.png) 0 0 no-repeat;}*/
+#leftcol .side-mod h3, #inset-block-left .side-mod h3 {background: url(../images/modules/mod_header_left.png) 0 0 no-repeat;}
 .micronews-headline h2, h3.main-modules {background: url(../images/modules/grey-h2.png) 50% 100% no-repeat;color: #333;}
 .readon1-l {background: url(../images/modules/light-readon-l.png) 0 0 no-repeat;}
 .readon1-m {background: url(../images/modules/light-readon-m.png) 50% 0 repeat-x;}

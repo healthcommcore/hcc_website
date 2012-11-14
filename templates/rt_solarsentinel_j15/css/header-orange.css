@@ -1,12 +1,12 @@
 /* Orange Header Style */
 
-#header-bar {background: url('../images/logo_tile.gif') 0 0 repeat-x;}
-#logo {background: url(../images/logo.gif) 0 0 no-repeat;}
+#header-bar {background: #86b5e8;}
+#logo {background: url(../images/header/orange/logo.png) 0 0 no-repeat;}
 .logo-text {color: #fff;}
 /*#searchmod {background: url(../images/header/orange/search-bg.png) 0 0 no-repeat;}*/
-#horiz-menu {background: #fff;}
+#horiz-menu {background: #E96900 url(../images/header/orange/horiz-bg.png) 0 0 repeat-x;}
 #horiz-menu li:hover .link, #horiz-menu li.sfHover .link {color: #fff;}
-#horiz-menu .link{color: #B4470F;}
+#horiz-menu .link{color: #fff;}
 #horiz-menu li:hover .link, #horiz-menu li.sfHover .link, #horiz-menu li.active .link{color: #fff;}
 #horiz-menu li.active .link, #horiz-menu li:hover .link, #horiz-menu li.sfHover .link {color:#B05307;/*background: url(../images/header/orange/horiz-r.png) 100% -3px no-repeat;*/}
 #horiz-menu li.active .link span, #horiz-menu li:hover .link span, #horiz-menu li.sfHover .link span {color:#B05307;/*background: url(../images/header/orange/horiz-l.png) 0 -3px no-repeat;*/}
