@@ -3,7 +3,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <?php if($this->params->get('show_page_title',1)) : ?>
-<div class="component-header"><h2 class="componentheading<?php echo $this->params->get('pageclass_sfx') ?>"><?php echo $this->escape($this->params->get('page_title')) ?></h2></div>
+<h2 class="contentheading<?php echo $this->params->get('pageclass_sfx') ?>"><?php echo $this->escape($this->params->get('page_title')) ?></h2>
 <?php endif; ?>
 
 <div id="page">

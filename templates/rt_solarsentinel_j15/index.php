@@ -150,6 +150,9 @@ pageTracker._trackPageview();
 					<?php elseif ($show_logo == "true") : ?>
 					<a href="<?php echo $this->baseurl; ?>" id="logo">
 					</a>
+					<?php if($this->countModules('header-search')) : ?>
+						<jdoc:include type="modules" name="header-search" style="xhtml" />
+					<?php endif; ?>
                 
                
 					<?php endif; ?>

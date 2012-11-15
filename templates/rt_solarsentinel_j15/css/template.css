@@ -130,6 +130,9 @@ a.syndicate-link {display: block;width: 50px;height: 17px;background: url(../ima
 #logo {float: left;position: relative;}
 .logo-text {position: absolute;left: 72px;top: 50px;font-size: 16px;}
 #logo:hover {text-decoration: none;}
+.moduletable_search{float:right; margin:45px 20px 0 0 ;}
+.moduletable_search label{position:absolute; margin-left:-300000px;}
+.moduletable_search input{background:#CADBEA;border:none; height:19px; width:142px; padding-left:3px;}
 
 /* RokAjaxSearch */
 #searchmod {float:right; width: 150px; padding: 5px 15px 5px 15px;}

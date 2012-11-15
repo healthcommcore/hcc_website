@@ -85,8 +85,10 @@ div.pagination div.tab2 {background: url(../images/body/white/page-tab-l.png) 0 
 .blog_more ul li, .block ul#mainlevel-nav li {background: url(../images/modules/light-div.png) 0 100% repeat-x;}
 .blog_more h2 {color: #333;}
 
+/*
 .component-header {background: url(../images/modules/light-module-h3-2.png) 0 0 repeat-x;}
 .componentheading {background: url(../images/body/white/component-head-bg.png) 0 0 no-repeat;}
+*/
 
 #lock-button {background: url(../images/body/white/lock.png) 0 50% no-repeat;}
 #lock-button.login {background: url(../images/body/white/lock2.png) 0 50% no-repeat;}
