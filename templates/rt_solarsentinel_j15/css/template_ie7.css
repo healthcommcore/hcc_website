@@ -7,16 +7,16 @@ body#ff-trebuchet.f-large {font-size: 13px;}
 #horiz-menu li.parent.sfHover, .menutop .drop-wrap {z-index:800 !important;}
 
 /* horizmenu */
-#horiz-menu {position:relative;z-index:140;}
+#horiz-menu {position:relative;z-index:140;  zoom:1;}
 #horiz-menu li .link span, #horiz-menu li, #horiz-menu li.active, #horiz-menu li.sfHover, .menutop .animated-bg {display:inline-block;}
 #horiz-menu li.parent-sfHover, .menutop .drop-wrap {z-index:800 !important;}
 .menutop .submenu-animation-left {position: relative;}
 .menutop .submenu-animation-right {float: left;position:absolute;left:0;top:0;padding-right:8px;}
 
-#horiz-menu .menutop li{margin-top:-4px;}
-#horiz-menu ul ul.columns-1 {margin-top:-2px;}
-
-
+#horiz-menu ul.menutop {margin-bottom:-6px;}
+#horiz-menu .menutop li{margin-top:0px;}
+#horiz-menu ul ul.columns-1 {margin-top:-16px;}
+.module-header{;}
 
 /* main layout */
 .componentheading {width:100%;}

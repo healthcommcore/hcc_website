@@ -318,9 +318,9 @@ pageTracker._trackPageview();
                 										<?php echo $subnav; ?>
                 									</div>
                 									<?php endif; ?>
-                									<jdoc:include type="modules" name="left" style="sidebar" />
+                									<jdoc:include type="modules" name="left" style="xhtml" />
                 									<?php if (!isset($active)) :?>
-        											<jdoc:include type="modules" name="inactive" style="sidebar" />    
+        											<jdoc:include type="modules" name="inactive" style="xhtml" />    
         											<?php endif; ?>
                                                 </div>
                 							</div>

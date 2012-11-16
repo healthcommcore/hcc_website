@@ -30,9 +30,9 @@ h3, #hcc_form label, strong, span.emphasis{font-family: 'RobotoBold'; font-weigh
 h1, h5 {padding-bottom: 5px;margin: 25px 0 10px 0;font-weight: normal;line-height: 120%;}
 h1 {font-size: 170%;line-height: 100%;}
 h2 {font-size: 123%;line-height: 140%; font-weight: normal; color:#7C7F43; margin:10px 0 3px 0; font-family: 'FrancoisOneRegular'; text-transform:uppercase;}
-h3.module-title{font-family:'SansumiExtraBoldRegular'} 
+h3.module-title{font-family:'SansumiExtraBoldRegular'; position:relative;} 
 h3, #hcc_form label {font-size: 120%; margin: 12px 0 3px 0;}
-h2.contentheading, .feature-block .feature-title, #horiz-menu{font-family: 'FrancoisOneRegular'; font-weight:normal; text-transform:inherit; }
+h2.contentheading, .feature-block .feature-title, #horiz-menu{font-family: 'FrancoisOneRegular'; font-weight:normal; text-transform:capitalize; }
 h2.contentheading{letter-spacing:-.03em}
 /*h4 {font-size: 110%;line-height: 130%;}*/
 h5 {font-size: 100%;text-transform: uppercase;}
@@ -314,7 +314,8 @@ div.pagination div.page-block {padding: 0 4px;float: left;margin-right: 6px;}
 
 /* Side Column Modules */
 .module-header {margin-bottom: -14px;}
-#leftcol .side-mod h3 {color:#4E86B9; margin: 0;font-size:10px;line-height: 15px;text-transform: uppercase;padding: 15px 0 12px 15px;letter-spacing:4px; }
+#leftcol .side-mod h3 {position:relative;color:#4E86B9; margin:0 0 -14px 0;font-size:10px;line-height: 15px;text-transform: uppercase;padding: 15px 0 12px 15px;letter-spacing:4px; }
+#leftcol .side-mod h3 span{position:relative; display:inline-block;}
 #leftcol .side-mod h4 {font-family:'FrancoisOneRegular'; font-weight:normal; margin:5px 0 12px ;}
 #leftcol .side-mod h4 a{font-size:19px; line-height:20px;}
 .side-mod {margin-bottom: 15px;}

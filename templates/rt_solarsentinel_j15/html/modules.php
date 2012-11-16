@@ -91,7 +91,7 @@ function modChrome_main($module, &$params, &$attribs)
 	<div class="<?php echo $params->get('moduleclass_sfx'); ?>">
 		<div class="moduletable">
 			<?php if ($module->showtitle != 0) : ?>
-			<h3 class="main-modules"><span><?php echo $module->title; ?></span></h3>
+			<h3 class="main-modules"><?php echo $module->title; ?></h3>
 			<?php endif; ?>
 			<?php echo $module->content; ?>
 		</div>
@@ -121,7 +121,7 @@ function modChrome_sidebar($module, &$params, &$attribs)
 	<div class="<?php echo $params->get('moduleclass_sfx'); ?>">
 		<div class="side-mod">
 			<?php if ($module->showtitle != 0) : ?>
-			<div class="module-header"><div class="module-header2"><h3 class="module-title"><?php echo $module->title; ?></h3></div></div>
+			<h3 class="module-title"><?php echo $module->title; ?></h3>
 			<?php endif; ?>
 			<div class="module">
 				<?php echo $module->content; ?>
@@ -140,7 +140,7 @@ function modChrome_inset($module, &$params, &$attribs)
 			<div class="inset-mod2">
 				<div class="module">
 					<?php if ($module->showtitle != 0) : ?>
-					<h3 class="module-title"><span><?php echo $module->title; ?></span></h3>
+					<h3 class="module-title"><?php echo $module->title; ?></h3>
 					<?php endif; ?>
 					<?php echo $module->content; ?>
 				</div>
