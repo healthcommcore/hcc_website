@@ -299,7 +299,7 @@ div.pagination {height: 22px;line-height: 22px;margin-top: 10px;margin-bottom: 1
 div.pagination div.tab {float: left;margin-right: 6px;}
 div.pagination div.tab2 {padding: 0 8px;}
 div.pagination div.page-block {padding: 0 4px;float: left;margin-right: 6px;}
-#leftcol{margin-top:15px;}
+#leftcol{margin-top:15px;padding-bottom:20px;}
 .cols1 {display: block;float: none;margin: 0;}
 .cols2 {width: 49%;}
 .cols3 {width: 30%;}
@@ -326,6 +326,9 @@ div.pagination div.page-block {padding: 0 4px;float: left;margin-right: 6px;}
 .advertisement .side-mod h3.module-title {text-align: center;padding: 2px;margin: 0;font-size: 10px;}
 #rightcol .advertisement .side-mod .module {padding: 0 0 0 5px;}
 #leftcol .advertisement .side-mod .module {padding: 0 5px 0 0;}
+.moduletablehome{padding:0 17px; color:#221F1F; line-height:19px;}
+.moduletablehome h3{font-family:'SansumiExtraBoldRegular';letter-spacing:0.5em; font-size:11px; text-transform:uppercase; color:#4E86B9; line-height:18px; margin:8px 0; padding-bottom:5px;}
+.moduletablehome h4{font-family:'FrancoisOneRegular'; font-size:19px; font-weight:normal; line-height:22px;margin-bottom:7px;}
 
 /* Main Body Modules */
 .moduletable h3 {margin-top: 0;font-size: 140%;}
@@ -729,8 +732,9 @@ body.bg-hccblue #page-bg {background: #fbfdf1 url(../images/background/hccblue/g
 .bottom_space{margin-bottom:12px;}
 
 div.quote{margin-top:30px;}
-div.quote div.module p{font-size:1.1em; font-family:'RobotoLightItalic'; line-height:1.6em; color:#295723; text-align:right; margin-bottom:10px;}
-div.quote div.module p.source{font-size:.75em; font-family:inherit;}
+.moduletablequote{padding:80px 17px 0; }
+.moduletablequote p{font-size:1.1em; font-family:'RobotoLightItalic'; line-height:1.6em; color:#15385B; text-align:right; margin-bottom:10px;}
+.moduletablequote p.source{font-size:.75em; font-family:'RobotoRegular';}
 
 #hcc_form .invisible{position:absolute; margin-left:3000px;}
 #hcc_form{margin-bottom:20px;}
