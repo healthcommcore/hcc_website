@@ -1,0 +1,13 @@
+#ff-roboto, a.roboto, .home_copy, .home_copy span, 
+h1, h2, h3, h4, .moduletablehome h3, .moduletablehome h4,
+h2.contentheading, .feature-block .feature-title, #horiz-menu{font-family: Arial, sans-serif;}
+h1, h2, h2.contentheading{font-weight:bold;}
+h1, h2.contentheading{line-height:1em; margin-bottom:1.7em;}
+h2{line-height:1.2em;}
+#header-bar, #horiz-menu, #rokmicronews{display:none;}
+#content_border{border:none;}
+.wrapper{width:100%;}
+.s-c-x .colright{border-left:#ccc 1px solid;}
+.feature-block .image-container{float:none;}
+.feature-block .desc-container{overflow:visible; position:relative;}
+.feature-block .desc-container .description{position:relative;}
