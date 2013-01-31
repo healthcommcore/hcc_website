@@ -700,7 +700,7 @@ pre {overflow: auto;}
 
 /*HCC MODS*/
 .home_copy{font-size:1.15em; line-height:1.75em; color:#444; font-family:'RobotoLight', Arial, sans-serif;}
-.home_copy span{font-family:'RobotoCondensed'; font-size:1.4em; color:#00467F}
+/*.home_copy span{font-family:'RobotoCondensed'; font-size:1.4em; color:#00467F}*/
 .sidemenu ul{margin: 0 -5px 0 -10px;padding: 7px 0;}
 .sidemenu li{list-style:none; margin-bottom:5px;}
 .sidemenu li a{color:#629A7D; line-height:130%; }
