@@ -32,8 +32,8 @@ h1 {font-size: 170%;line-height: 100%;}
 h2 {font-size: 123%;line-height: 140%; font-weight: normal; color:#7C7F43; margin:10px 0 3px 0; font-family: 'FrancoisOneRegular';}
 h3.module-title{font-family:'SansumiExtraBoldRegular'; position:relative;} 
 h3, #hcc_form label {font-size: 120%; margin: 12px 0 3px 0;}
-h2.contentheading, .feature-block .feature-title, #horiz-menu{font-family: 'FrancoisOneRegular'; font-weight:normal;}
-h2.contentheading{letter-spacing:-.03em}
+h2.contentheading, .feature-block .feature-title, #horiz-menu, .home_copy h1{font-family: 'FrancoisOneRegular'; font-weight:normal;}
+h2.contentheading, .home_copy h1{letter-spacing:-.03em}
 /*h4 {font-size: 110%;line-height: 130%;}*/
 h5 {font-size: 100%;text-transform: uppercase;}
 span.emphasis, h3{color:#01529C; font-size:1.15em;}
@@ -699,20 +699,27 @@ pre {overflow: auto;}
 /* @end */
 
 /*HCC MODS*/
-.home_copy{font-size:1.15em; line-height:1.75em; color:#444; font-family:'RobotoLight', Arial, sans-serif;}
-/*.home_copy span{font-family:'RobotoCondensed'; font-size:1.4em; color:#00467F}*/
+
+/* Homepage */
+.home_copy{color:#444; font-family:'RobotoLight', Arial, sans-serif;}
+#home-border-right{border-right:#32538A 1px solid;}
+.home_copy ul, .home_copy p{font-size:1.3em; line-height:1.3em;}
+.home_copy h1{color:#02529D; font-size: 1.9em; line-height:1.3em; margin-top:10px;}
+.home_copy ul{padding-left:25px; margin:8px 0; width:85%;}
+.home_copy ul li{list-style-image:none; list-style:none; background:url('../images/home_bullet.gif') 0 3px no-repeat; padding:0 0 17px 35px;}
+.home_contact a{display:inline-block; background:#C46C3F; font-size:1.25em; margin-right: 4px; padding:7px 15px 10px; color:#fff; font-family:'FrancoisOneRegular';}
+.home_contact a:hover{background:#CC835C; text-decoration:none;}
+
+
 .sidemenu ul{margin: 0 -5px 0 -10px;padding: 7px 0;}
 .sidemenu li{list-style:none; margin-bottom:5px;}
 .sidemenu li a{color:#629A7D; line-height:130%; }
 .sidemenu li a:hover{color:#336666;}
 
-.home a{font-size:12px;}
-.home img{border:#AADB9F 1px solid;}
 
 h3, #hcc_form label{color:#7C7F43;}
 h4{font-size:12px; color:#4C90BD; font-weight:bold; margin:0; padding:0; line-height:140%; margin:0 0 4px 0;}
 
-#home-border-right{border-right:#32538A 1px solid;}
 #dfhcc{float:right; padding:12px 15px 0 0;}
 
 /*body.bg-hccblue {background: #fbfdf1;}
