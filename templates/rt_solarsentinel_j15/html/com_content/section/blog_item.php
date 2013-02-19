@@ -10,14 +10,14 @@ defined('_JEXEC') or die('Restricted access');
 	<?php endif; ?>
 	<div class="article-rel-wrapper">
 	<?php if ($this->item->params->get('show_title')) : ?>
-	<h2 class="contentheading">
+	<h1>
 		<?php if ($this->item->params->get('link_titles') && $this->item->readmore_link != '') : ?>
 			<a href="<?php echo $this->item->readmore_link; ?>" class="contentpagetitle">
 				<?php echo $this->escape($this->item->title); ?></a>
 		<?php else :
 			echo $this->escape($this->item->title);
 		endif; ?>
-	</h2>
+	</h1>
 	<?php endif; ?>
 
 	<?php if (!$this->item->params->get('show_intro')) :

@@ -4,7 +4,7 @@ $cparams = JComponentHelper::getParams ('com_media');
 ?>
 
 <?php if ($this->params->get('show_page_title')) : ?>
-<h2 class="contentheading"><?php echo $this->escape($this->params->get('page_title')); ?></h2>
+<h1><?php echo $this->escape($this->params->get('page_title')); ?></h1>
 <?php endif; ?>
 
 <div class="blog<?php echo $this->params->get('pageclass_sfx'); ?>">

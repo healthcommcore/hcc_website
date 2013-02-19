@@ -14,13 +14,13 @@ defined('_JEXEC') or die('Restricted access');
 		<?php endif; ?>
 		<div class="article-rel-wrapper">
 			<?php if ($this->params->get('show_title')) : ?>
-			<h2 class="contentheading">
+			<h1>
 				<?php if ($this->params->get('link_titles') && $this->article->readmore_link != '') : ?>
 				<a href="<?php echo $this->article->readmore_link; ?>" class="contentpagetitle"><?php echo $this->article->title; ?></a>
 				<?php else :
 				echo $this->escape($this->article->title);
 				endif; ?>
-			</h2>
+			</h1>
 			<?php endif; ?>
 	 	</div>
 
@@ -72,9 +72,9 @@ defined('_JEXEC') or die('Restricted access');
 				<?php if ($this->params->get('link_section')) : ?>
 					<?php echo '<a href="'.JRoute::_(ContentHelperRoute::getSectionRoute($this->article->sectionid)).'">'; ?>
 				<?php endif; ?>
-			<h2 class="contentheading">
+			<h1>
             	<?php echo $this->article->section; ?>
-            </h2>   
+            </h1>   
             <?php if ($this->params->get('show_create_date')) : ?>
 				<div>	
                     <span class="createdate">
