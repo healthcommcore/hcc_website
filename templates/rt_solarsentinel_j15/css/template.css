@@ -700,14 +700,14 @@ pre {overflow: auto;}
 /*HCC MODS*/
 
 /* Homepage */
-.home_copy{color:#444; font-family:'RobotoLight', Arial, sans-serif;}
 #home-border-right{border-right:#32538A 1px solid;}
+.home_copy{width:95%; color:#444; font-family:'RobotoLight', Arial, sans-serif;}
 .home_copy ul, .home_copy p{font-size:1.3em; line-height:1.3em;}
-.home_copy h1{margin:10px 0 15px 0; padding:0;}
+.home_copy h1{margin:10px 0 15px 0; padding:0; font-size:2.1em;}
 .home_copy ul{padding-left:25px; margin:8px 0; width:85%;}
 .home_copy ul li{list-style-image:none; list-style:none; background:url('../images/home_bullet.gif') 0 3px no-repeat; padding:0 0 17px 35px;}
-.home_contact a{display:inline-block; background:#C46C3F; font-size:1.25em; margin-right: 4px; padding:7px 15px 10px; color:#fff; font-family:'FrancoisOneRegular';}
-.home_contact a:hover{background:#CC835C; text-decoration:none;}
+.home_contact a{display:inline-block; background:#B4470F; font-size:1.25em; margin-right: 2px; padding:7px 11px 9px; color:#fff; font-family:'FrancoisOneRegular';}
+.home_contact a:hover{background:#C46C3F; text-decoration:none;}
 
 
 .sidemenu ul{margin: 0 -5px 0 -10px;padding: 7px 0;}
