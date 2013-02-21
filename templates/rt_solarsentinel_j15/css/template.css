@@ -91,7 +91,7 @@ body.bg-black .footer-bottom {background: url(../images/background/black/footer-
 /* s-c-x (sidebar-content) */
 .s-c-x .colright {float:left;left:185px;position:relative;width:200%; background:#fff;border-left:#4A4D1A 1px solid;}
 .s-c-x .col1wrap {float:right;padding-bottom:1em;position:relative;right:180px;width:50%;}
-.s-c-x .col1 {margin:0 0 0 200px;overflow:hidden;position:relative;right:100%;}
+.s-c-x .col1 {margin:0 0 0 200px;position:relative;right:100%;}
 .s-c-x .col2 {float:left;position:relative;right:185px;width:187px;}
 .s-c-x .colmask {background:url('../images/leftcol_tile.jpg') 65px 0 repeat-y;}
 .s-c-x .maincol2-padding {padding: 0 0 0 1px;}
@@ -610,7 +610,7 @@ ul.newsfeed .newsfeed-div {display: block;padding-bottom: 1px;}
 #leftcol .side-mod #rokweather {margin:0 -10px 0 -15px;}
 
 /* Featured Section */
-.feature-block {overflow: hidden;position: relative;padding: 15px 22px 15px 15px;}
+.feature-block {overflow: hidden;position: relative;padding: 15px 22px 5px 15px;}
 .feature-block .image-container {float: left;margin-right: 15px;}
 .feature-block .rokstories-spinner {background: transparent url(../images/spinner.gif) no-repeat scroll 50% 50%}
 .feature-block .image-container .image-full {position:relative;overflow: hidden; border: #000 1px solid;}
@@ -701,14 +701,21 @@ pre {overflow: auto;}
 
 /* Homepage */
 #home-border-right{border-right:#32538A 1px solid;}
-.home_copy{width:95%; color:#444; font-family:'RobotoLight', Arial, sans-serif;}
+.home_copy, .home_contact{font-family:'RobotoLight', Arial, sans-serif;}
+.home_copy{width:95%; color:#444; }
 .home_copy ul, .home_copy p{font-size:1.3em; line-height:1.3em;}
-.home_copy h1{margin:10px 0 15px 0; padding:0; font-size:2.1em;}
+.home_copy h1{margin:10px 0 15px 0; padding:0; font-size:2.1em; line-height:1.3em;}
 .home_copy ul{padding-left:25px; margin:8px 0; width:85%;}
-.home_copy ul li{list-style-image:none; list-style:none; background:url('../images/home_bullet.gif') 0 3px no-repeat; padding:0 0 17px 35px;}
+.home_copy ul li{list-style-image:none; list-style:none; background:url('../images/home_bullet.gif') 0 3px no-repeat; padding:0 0 13px 35px;}
+.home_contact{position:relative; border-top:1px solid #4A4D1A; margin-left:-36px; width:50%; font-size:1.1em; margin-bottom:100px;}
+.home_contact .margin{display:block; right:-40px; position:absolute;}
+.home_contact h2{text-transform:none; font-size:1.3em; margin-top:3px;}
+.home_contact p{}
+.home_contact a{font-family:'RobotoRegular';}
+/*
 .home_contact a{display:inline-block; background:#B4470F; font-size:1.25em; margin-right: 2px; padding:7px 11px 9px; color:#fff; font-family:'FrancoisOneRegular';}
 .home_contact a:hover{background:#C46C3F; text-decoration:none;}
-
+*/
 
 .sidemenu ul{margin: 0 -5px 0 -10px;padding: 7px 0;}
 .sidemenu li{list-style:none; margin-bottom:5px;}
