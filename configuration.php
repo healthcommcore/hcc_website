@@ -16,8 +16,8 @@ class JConfig {
 	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
-	var $log_path = '/var/www/healthcommcore.org/logs';
-	var $tmp_path = '/var/www/healthcommcore.org/tmp';
+	var $log_path = '/var/www/html/healthcommcore.org/logs';
+	var $tmp_path = '/var/www/html/healthcommcore.org/tmp';
 	var $live_site = '';
 	var $force_ssl = '0';
 	var $offset = '0';

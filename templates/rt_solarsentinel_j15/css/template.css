@@ -29,14 +29,15 @@ p {margin:0 0 20px 0;}
 h3, #hcc_form label, strong, span.emphasis{font-family: 'RobotoBold'; font-weight:normal;}
 h5 {padding-bottom: 5px;margin: 25px 0 10px 0;font-weight: normal;line-height: 120%;}
 h1{color:#02529D; font-size: 2.2em; line-height:1.3em; margin: 20px 0; padding: 20px 15px 0 0; }
-h2 {text-transform:uppercase; font-size: 123%;line-height: 140%; font-weight: normal; color:#7C7F43; margin:10px 0 3px 0; font-family: 'FrancoisOneRegular';}
+h2 { font-size: 145%;line-height: 140%; font-weight: normal; color:#7C7F43; margin:10px 0 3px 0; font-family: 'FrancoisOneRegular';}
 h3.module-title{font-family:'SansumiExtraBoldRegular'; position:relative;} 
-h3, #hcc_form label {font-size: 120%; margin: 12px 0 3px 0;}
+h3{text-transform:uppercase;}
+h3, #hcc_form label {font-size: 100%; margin: 12px 0 3px 0;}
 h1, .feature-block .feature-title, #horiz-menu, .home_copy h1{font-family: 'FrancoisOneRegular'; font-weight:normal;}
 h1{letter-spacing:-.04em}
 /*h4 {font-size: 110%;line-height: 130%;}*/
 h5 {font-size: 100%;text-transform: uppercase;}
-span.emphasis, h3{color:#01529C; font-size:1.15em;}
+span.emphasis, h3{color:#01529C; font-size:1em;}
 a {text-decoration: none;}
 a:hover {text-decoration: underline;}
 .clr {clear: both;}
