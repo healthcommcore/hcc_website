@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install method="upgrade" type="module" version="1.5.0">
+	<name>Related Articles Plus</name>
+	<author>Mark Dexter</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>(C) 2008, 2009, 2010 Mark Dexter. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>dextercowley@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.1.0</version>
+	<description>DESCFJRELATEDPLUS</description>
+	<files>
+		<filename module="mod_fj_related_plus">mod_fj_related_plus.php</filename>
+		<filename>index.html</filename>
+    	<filename>helper.php</filename>
+    	<filename>tmpl/default.php</filename>
+    	<filename>tmpl/index.html</filename>
+    	<filename>tmpl/keyword.php</filename>
+		<filename>elements/fjarticle.php</filename>
+    	<filename>elements/fjsql.php</filename>
+    	<filename>elements/index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_fj_related_plus.ini</language>
+		<language tag="it-IT">it-IT.mod_fj_related_plus.ini</language>
+	</languages>
+	<params addpath="/modules/mod_fj_related_plus/elements" >
+		<param name="count" type="text" default="5" label="Count" description="PARAMARTICLECOUNT" />
+		<param name="minimumMatches" type="text" default="1" label="Minimum Matches" description="PARAMFJMINIMUMMATCHES" />		
+		<param type="spacer" />
+   		<param type="spacer" default="SPACERLIMITDESC" />
+			<param name="secid" type="fjsql" default="" label="Select Sections"
+			multiple="YES" description="PARAMSECTIONID"
+			query="(SELECT 'C' AS value, '-Current Article Section-' as secid)
+					UNION
+					(SELECT '0' AS value, '-Uncategorised-' as secid)
+					UNION
+					(SELECT id AS value, title as secid FROM #__sections) 
+					ORDER BY secid" />
+			<param name="catid" type="fjsql" default="" label="Select Categories"
+			multiple="YES" description="PARAMCATEGORYID"
+			query="(SELECT 'C' AS value, '-Current Article Category-' as catid)
+					UNION
+					(SELECT '0' AS value, '-Uncategorised-' as catid)
+					UNION
+					(SELECT c.id AS value, CONCAT(s.title, ' / ', c.title) as fj_include_categories
+					FROM #__categories as c, #__sections as s
+					WHERE c.section = s.id  ) 
+					ORDER BY catid" />		<param type="spacer" />
+		<param name="ordering" type="list" default="alpha" label="Ordering" description="PARAMORDERING">
+			<option value="alpha">Title Alphabetical</option>
+			<option value="rdate">Recently Added First</option>
+			<option value="date">Oldest First</option>
+			<option value="bestmatch">Most Matches First</option>
+			<option value="article_order">Article Manager Order</option>
+			<option value="keyword_article">Keyword Alphabetical</option>
+			<option value="random">Random</option>
+	  	</param>
+		<param name="showDate" type="list" default="none" label="Article date" description="FJRELATEDPARAMDATE">
+			<option value="none">No Date</option>
+			<option value="create">Create Date</option>
+			<option value="modify">Modified Date</option>
+		</param>
+		<param name="date_format" type="text" size="30" default="" label="Date Format" description="PARAMDATEFORMAT" />
+		<param name="showMatchCount" type="radio" default="0" label="Keyword Match Count" description="PARAMKEYWORDCOUNT">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="showMatchList" type="radio" default="0" label="Keyword Match List" description="PARAMKEYWORDLIST">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="keywordLabel" type="text" default="" size = "30" label="Keyword Label" description="PARAMKEYWORDLABEL" />
+		<param name="notArticleText" type="text" default="" size = "50" label="Text If Not An Article" description="PARAMNOTARTICLETEXT" />		
+		<param name="noRelatedText" type="text" default="" size = "50" label="Text If No Related" description="PARAMNORELATEDTEXT" />		
+		<param type="spacer" />
+   		<param type="spacer" default="SPACERAUTHORDESC" />
+		<param name="matchAuthor" type="radio" default="0" label="Match on Author" description="PARAMAUTHORMATCH">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="matchAuthorAlias" type="radio" default="0" label="Match on Author Alias" description="PARAMAUTHORALIASMATCH">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+   		<param type="spacer" default="SPACERCATEGORYDESC" />
+		<param name="fjmatchCategory" type="radio" default="0" label="Match on Category" description="PARAMCATEGORYMATCH">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+		<param type="spacer" />
+   		<param type="spacer" default="SPACERTOOLTIPDESC" />
+		<param name="show_tooltip" type="radio" default="1" label="Show Intro Text as Tooltip" description="FJRELATEDPARAMSHOWTOOLTIP" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="max_chars" type="text" default="250" label="Tooltip Maximum Length" description="FJRELATEDMAXCHARS" />		
+		<param name="fj_title_linkable" type="radio" default="1" label="Title Linkable" description="FJRELATEDPARAMTITLELINKABLE" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="ignore_keywords" type="textarea" rows="3" cols="30" default="" label="Keywords to Ignore" description="FJRELATEDIGNORE" />
+		<param name="ignore_all_keywords" type="radio" default="0" label="Ignore All Keywords" description="FJRELATEDPARAMIGNOREALL" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>		
+		</param>		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced" addpath="/modules/mod_fj_related_plus/elements">
+		<param name="fj_menu_item_types" type="radio" default="article" label="Show Module on Menu Types" description="FJRELATEDPARAMSMENUITEMS" >
+			<option value="article">Article Only</option>
+			<option value="any">Any</option>
+		</param>
+	  	<param type="spacer" default="FJSPACERINCLUDEALLDESC" />
+		<param name="fj_include_sections" type="fjsql" default="" label="Select Sections"
+			multiple="YES" description="FJPARAMINCLUDESECTIONS"
+			query="(SELECT '0' AS value, '-Uncategorised-' as fj_include_sections)
+					UNION
+					(SELECT id AS value, title as fj_include_sections FROM #__sections) 
+					ORDER BY fj_include_sections" />
+		<param name="fj_include_categories" type="fjsql" default="" label="Select Categories"
+			multiple="YES" description="FJPARAMINCLUDECATEGORIES"
+			query="(SELECT '0' AS value, '-Uncategorised-' as fj_include_categories)
+					UNION
+					(SELECT c.id AS value, CONCAT(s.title, ' / ', c.title) as fj_include_categories
+					FROM #__categories as c, #__sections as s
+					WHERE c.section = s.id  ) 
+					ORDER BY fj_include_categories" />
+		<param name="fj_include_authors" type="fjsql" default="" label="Select Authors"
+			multiple="YES" description="FJPARAMINCLUDEAUTHORS"
+			query="SELECT u.id AS value, u.name as fj_include_authors
+					FROM #__users as u 
+					ORDER BY fj_include_authors" />
+		<param name="fj_include_alias" type="fjsql" default="" label="Select Author Aliases"
+			multiple="YES" description="FJPARAMINCLUDEALIAS"
+			query="SELECT DISTINCT created_by_alias AS value, created_by_alias as fj_include_alias
+					FROM #__content
+					WHERE created_by_alias > ' ' 
+					ORDER BY created_by_alias" />
+		<param type="spacer"  />
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
