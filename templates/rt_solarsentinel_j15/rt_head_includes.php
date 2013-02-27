@@ -8,7 +8,7 @@
 
 $this->addStylesheet($this->baseurl."/templates/".$this->template."/css/template.css");
 ?>
-<link href="<?php echo $this->baserul . "/templates/" . $this->template . "/css/print.css"; ?>" rel="stylesheet" type="text/css" media="print" />
+<link href="<?php echo $this->baseurl . "/templates/" . $this->template . "/css/print.css"; ?>" rel="stylesheet" type="text/css" media="print" />
 <?php
 $this->addStylesheet($this->baseurl."/templates/".$this->template."/css/header-".$header_style.".css");
 $this->addStylesheet($this->baseurl."/templates/".$this->template."/css/body-".$body_style.".css");
