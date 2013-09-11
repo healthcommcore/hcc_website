@@ -31,15 +31,17 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 			<label for="rem"><?php echo JText::_( 'Remember me' ); ?></label>
 		</div>
 	</fieldset>
+<!-- Do not want people to register
 	<p>
-		<a href="<?php echo JRoute::_( 'index.php?option=com_user&task=lostPassword' ); ?>">
-			<?php echo JText::_('Lost Password?'); ?></a>
-		<?php if ( $this->params->get( 'registration' ) ) : ?>
-		<?php echo JText::_('No account yet?'); ?>
-		<a href="<?php echo JRoute::_( 'index.php?option=com_user&task=register' ); ?>">
-			<?php echo JText::_( 'Register' ); ?></a>
-		<?php endif; ?>
+		<a href="<?php //echo JRoute::_( 'index.php?option=com_user&task=lostPassword' ); ?>">
+			<?php //echo JText::_('Lost Password?'); ?></a>
+		<?php //if ( $this->params->get( 'registration' ) ) : ?>
+		<?php //echo JText::_('No account yet?'); ?>
+		<a href="<?php //echo JRoute::_( 'index.php?option=com_user&task=register' ); ?>">
+			<?php //echo JText::_( 'Register' ); ?></a>
+		<?php //endif; ?>
 	</p>
+-->
 	<div class="readon-wrap1"><div class="readon1-l"></div><a class="readon-main"><span class="readon1-m"><span class="readon1-r"><input type="submit" name="Submit" class="button" value="<?php echo JText::_('Login'); ?>" /></span></span></a></div><div class="clr"></div>
 	<noscript><?php echo JText::_( 'WARNJAVASCRIPT' ); ?></noscript>
 	<input type="hidden" name="option" value="com_user" />
